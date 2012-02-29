@@ -15,6 +15,12 @@ long_description = (read('README.rst'))
 
 tests_require = ['zope.testing']
 
+
+requires = [
+    'setuptools',
+    'nltk',
+]
+
 setup(name='rt.semantic',
       version=version,
       description="RedTurtle Semantic",
@@ -33,9 +39,7 @@ setup(name='rt.semantic',
       namespace_packages=['rt'],
       include_package_data=True,
       zip_safe=False,
-      install_requires=['setuptools',
-                        # -*- Extra requirements: -*-
-                        ],
+      install_requires=requires,
       tests_require=tests_require,
       extras_require=dict(tests=tests_require),
       test_suite='',
