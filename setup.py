@@ -19,6 +19,7 @@ tests_require = ['zope.testing']
 requires = [
     'setuptools',
     'nltk',
+    'numpy'
 ]
 
 setup(name='rt.semantic',
