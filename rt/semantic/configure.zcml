@@ -7,6 +7,7 @@
     i18n_domain="rt.semantic">
 
   <includeDependencies package="." />
+  <include package=".behaviors" />
   <grok:grok package=".models" />
 
   <genericsetup:registerProfile

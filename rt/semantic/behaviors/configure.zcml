@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="rt.semantic">
+
+  <grok:grok package="." />
+
+  <plone:behavior
+        title="Semantic categorization"
+        description="Semantic categorization behavior providing tag field"
+        provides=".ISemantic"
+        factory=".Semantic"
+        for="plone.dexterity.interfaces.IDexterityContent"
+        />
+
+</configure>

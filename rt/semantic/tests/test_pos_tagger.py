@@ -1,6 +1,6 @@
 import unittest
 
-from rt.semantic.tagger import tag
+from rt.semantic.tagger import tag, extract_nouns
 
 
 class TestPOSTagger(unittest.TestCase):
@@ -14,3 +14,6 @@ class TestPOSTagger(unittest.TestCase):
 
     def test_empty_text(self):
         self.assertEqual([], tag(''))
+
+    def test_extract_nouns(self):
+        self.assertEqual([], extract_nouns('The quick brown fox jumps over lazy dog'))
