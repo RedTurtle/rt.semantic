@@ -7,7 +7,14 @@
     i18n_domain="rt.semantic">
 
   <includeDependencies package="." />
-  <grok:grok package=".models" />
+  <grok:grok package="." />
+
+  <plone:behavior
+      title="Semantic"
+      description="Provide additional semantic field"
+      provides=".behavior.ISemantic"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      />
 
   <genericsetup:registerProfile
       name="default"
