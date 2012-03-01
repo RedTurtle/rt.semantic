@@ -14,13 +14,13 @@ class RedturtleSemantic(PloneSandboxLayer):
     def setUpZope(self, app, configurationContext):
         # Load ZCML for this package
         import rt.semantic
-        # xmlconfig.file('configure.zcml',
-        #                redturtle.semantic,
-        #                context=configurationContext)
+        xmlconfig.file('configure.zcml',
+                       rt.semantic,
+                       context=configurationContext)
 
     def setUpPloneSite(self, portal):
-        # applyProfile(portal, 'redturtle.semantic:default')
-        pass
+        applyProfile(portal, 'rt.semantic:default')
+
 
 REDTURTLE_SEMANTIC_FIXTURE = RedturtleSemantic()
 REDTURTLE_SEMANTIC_INTEGRATION_TESTING = \
