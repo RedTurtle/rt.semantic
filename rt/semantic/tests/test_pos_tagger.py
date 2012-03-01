@@ -25,7 +25,6 @@ class TestPOSTagger(unittest.TestCase):
         pos_tags = tag(self.alicetext)
         most_important = extract_keywords(pos_tags)
         self.assertEqual(most_important,
-                         ['door', 'table', 'house', 'notices', 'time', 'baby', 
+                         ['door', 'table', 'house', 'notices', 'time', 'baby',
                           'day', 'finds', 'head', 'mushroom'])
-        
-        
+

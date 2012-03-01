@@ -11,7 +11,7 @@ def tag(text):
 
 def extract_keywords(pos_tags, count=10):
     """
-    Filter for nouns and return the most frequent ones 
+    Filter for nouns and return the most frequent ones
     """
     noun_types = ['NN', 'NNS', 'NP']
     nouns = [noun for noun, tag in pos_tags if tag in noun_types]

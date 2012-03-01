@@ -18,10 +18,10 @@
       />
 
   <subscriber
-  		for="rt.semantic.behavior.ISemantic
-			 zope.lifecycleevent.interfaces.IObjectCreatedEvent"
-		handler=".subscribers.set_semantic_data"
-  />
+      for="rt.semantic.behavior.ISemantic
+      zope.lifecycleevent.interfaces.IObjectCreatedEvent"
+      handler=".subscribers.set_semantic_data"
+      />
 
   <genericsetup:registerProfile
       name="default"
