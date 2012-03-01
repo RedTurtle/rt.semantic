@@ -1,3 +1,4 @@
+
 from zope.schema import getFieldsInOrder
 from zope.schema.interfaces import IText
 from plone.dexterity.utils import iterSchemata
@@ -13,3 +14,4 @@ def set_semantic_data(obj, event):
     full_text = "\n".join(text)
     pos_tags = tag(full_text)
     return extract_keywords(pos_tags)
+

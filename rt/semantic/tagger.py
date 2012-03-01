@@ -1,3 +1,4 @@
+
 import nltk
 nltk.download('maxent_treebank_pos_tagger')
 
@@ -17,3 +18,4 @@ def extract_keywords(pos_tags, count=10):
     nouns = [noun for noun, tag in pos_tags if tag in noun_types]
     freq = nltk.FreqDist(nouns)
     return freq.keys()[:count]
+

@@ -1,6 +1,7 @@
+
 from zope.i18nmessageid import MessageFactory
 from logging import getLogger
 
-
-logger = getLogger('rt.semantic')
+logger = getLogger(__name__)
 semanticMessageFactory = MessageFactory('rt.semantic')
+
