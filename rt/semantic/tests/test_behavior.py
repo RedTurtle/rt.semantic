@@ -1,9 +1,10 @@
 import unittest
 
-from plone.behavior.interfaces import IBehavior
 from zope.component import getUtilitiesFor
+from plone.behavior.interfaces import IBehavior
 
 from rt.semantic.testing import REDTURTLE_SEMANTIC_INTEGRATION_TESTING
+
 
 class TestBehavior(unittest.TestCase):
 
