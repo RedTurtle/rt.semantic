@@ -17,6 +17,12 @@
       for="plone.dexterity.interfaces.IDexterityContent"
       />
 
+  <subscriber
+  		for="rt.semantic.behavior.ISemantic
+			 zope.lifecycleevent.interfaces.IObjectCreatedEvent"
+		handler=".subscribers.set_semantic_data"
+  />
+
   <genericsetup:registerProfile
       name="default"
       title="rt.semantic"
@@ -25,8 +31,4 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-   <subscriber for="plone.dexterity.interfaces.IDexterityContent
-            	    zope.lifecycleevent.interfaces.IObjectCreatedEvent"
-           		handler=".subscribers.set_semantic_data"
-            	/>
 </configure>
