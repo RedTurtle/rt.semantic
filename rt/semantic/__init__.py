@@ -1,6 +1,6 @@
 from zope.i18nmessageid import MessageFactory
-import nltk
+from logging import getLogger
 
 
-nltk.download('maxent_treebank_pos_tagger')
+logger = getLogger('rt.semantic')
 semanticMessageFactory = MessageFactory('rt.semantic')

@@ -1,0 +1,14 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+    <genericsetup:upgradeSteps
+        profile="rt.semantic:default"
+        source="1"
+        destination="2"
+        >
+        <genericsetup:upgradeStep
+            handler=".v1to2.upgrade"
+            title="Add Semantic dexterity behaviour"
+            description=""
+        />
+    </genericsetup:upgradeSteps>
+</configure>

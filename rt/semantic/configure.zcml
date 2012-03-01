@@ -8,6 +8,7 @@
 
   <includeDependencies package="." />
   <grok:grok package="." />
+  <include package=".upgrades" />
 
   <plone:behavior
       title="Semantic"
