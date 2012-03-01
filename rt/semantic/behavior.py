@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 from zope import schema
 from zope.interface.declarations import alsoProvides
 
@@ -25,3 +26,4 @@ class ISemantic(form.Schema):
     form.no_omit(IEditForm, 'semantic')
 
 alsoProvides(ISemantic, IFormFieldProvider)
+
