@@ -26,7 +26,7 @@
       />
 
    <subscriber for="plone.dexterity.interfaces.IDexterityContent
-            	    zope.lifecycleevent.interfaces.IObjectAddedEvent"
+            	    zope.lifecycleevent.interfaces.IObjectCreatedEvent"
            		handler=".subscribers.set_semantic_data"
             	/>
 </configure>
