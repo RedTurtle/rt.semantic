@@ -25,4 +25,8 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+   <subscriber for="plone.dexterity.interfaces.IDexterityContent
+            	    zope.lifecycleevent.interfaces.IObjectAddedEvent"
+           		handler=".subscribers.set_semantic_data"
+            	/>
 </configure>
