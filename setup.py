@@ -19,6 +19,7 @@ tests_require = ['zope.testing']
 requires = [
     'setuptools',
     'plone.app.dexterity',
+    'plutonian',
     'nltk',
     'numpy'
 ]

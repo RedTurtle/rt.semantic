@@ -11,7 +11,7 @@
         title="Semantic categorization"
         description="Semantic categorization behavior providing tag field"
         provides=".ISemantic"
-        factory=".Semantic"
+        factory="plone.behavior.AnnotationStorage"
         for="plone.dexterity.interfaces.IDexterityContent"
         />
 
