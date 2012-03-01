@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="rt.semantic">
+
+  <includeDependencies package="." />
+  <grok:grok package=".models" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="rt.semantic"
+      directory="profiles/default"
+      description="Installs the rt.semantic package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>
